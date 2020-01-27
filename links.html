@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<!-- adding document language attribute to define launguage its written in-->
+<html lang='en'>
+  <head>
+    <title>Links</title>
+  </head>
+  <body>
+    <h1>Links</h1>
+
+    <!-- links are created with the <a> element = "anchor". Different elements allow different attributes, check out MDN for more info! Attributes live inside the opening tag; the attribute name comes FIRST then = then the "value" of the attribure in quotes. -->
+    <p>This example is about links and <a href='images.html'>images</a>.</p>
+
+    <p>This particular page is about links! There are three kinds of links:</p>
+
+    <ul>
+      <!--websites are just a collection of html files ogranized into folders. to refer to them from inside anotrher file, Internet uses "uniform resource locators (URLs) that take three different forms: absolute, relative, and root-relative links-->
+      <!-- add <li> elements here!-->
+      
+      <li>Absolute links, like to
+        <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'>Mozilla Developer Network</a>, which is a very good resource for web developers.
+      </li>
+
+      <!--PRO TIP! Absolute links are better to reserve only for directing users to a different website instead of hard-coding your domain name everywhere.-->
+      <!-- target attributes defines where to display the page when the user clicks the link, by default most browsers replace the current page w a new one. target alters it so it opens in a new window or tab. _blank SPECIFIES new tab or window-->
+
+      <li>Relative links, like to our <a href='misc/extras.html'>extras page</a>.</li>
+
+      <!--relative links point to another file in ur website. since scheme and domain name are the same as its current page, only need to supply path.-->
+      <!-- BEST for referring to resources in the same folder or in a standalone section of ur website. this is nice so you can move around the folder w.out having to update all the hrefs in your <a> elements-->
+
+      <!--this won't work for our local HTML files since this isnt hosted on a web server-->
+      <li>Root-relative links, like to the <a href='/'>home page</a> of our website, but those aren't useful to us right now. sadface. ;(</li>
+    </ul>
+  </body>
+</html>
