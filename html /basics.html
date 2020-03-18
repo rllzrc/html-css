@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- adding document language attribute to define lang its written in-->
+<html lang='en'>
+  <head>
+    <!--- Metadata goes here! -->
+
+    <!--things like page titles
+        CSS Links
+        and other abstract things-->
+
+        <!--titles are the most important pieces of metadata, browsers display this in the tab for your page && Google shows it in search engine results-->
+        <title>Interneting is Easy!</title>
+  </head>
+  <body>
+    <!-- Content goes here -->
+
+    <!--things like headings go here
+        Paragraphs & other things you can see-->
+        <h1>Interneting Is Easy!</h1>
+        <p>
+          <!-- this element marks all the text inside it as a distinct paragraph-->
+          First, we need to learn some basic HTML!
+        </p>
+
+        <h2>Headings</h2>
+        <p>Headings define the outline of your site. There are six levels of headings.</p>
+
+        <h2>Lists</h2>
+
+        <p>This is how you make an unordered list:</p>
+
+        <ul>
+          <li>Add a "ul" element (it stands for unordered lists)</li>
+          <li>Add each item in its own "li" element</li>
+          <li>They don't need to be in any particular order</li>
+        </ul>
+
+        <!-- <ul> elements should only contain <li> elements
+          if you are not sure about a particular element google MDN <some-element>-->
+        
+        <p>This is what an ordered list looks like</p>
+
+        <ol>
+          <li>Notice the new "ol" element wrapping everything</li>
+          <li>But, the list item elements are the same</li>
+          <li>Also note how the numbers increment on their own</li>
+          <li>You should be noticing things in this precise order, because this is an ORDERED list</li>
+        </ol>
+
+    <!-- pro tip! step-by-step procedures like recipes, instructions, tables of contents are good candidates for ORDERED lists while <ul> lists are better for item inventories, product features, navigational menus...etc-->
+    
+    <h2>Inline Elements</h2>
+
+    <p><em>Sometimes</em>, you need to draw attention to a particular word or phrase.</p>
+
+    <p>Other times you need to <strong>strongly</strong> emphasize the importance of a word phrase.</p>
+
+    <p><em><strong>And sometimes you need to shout!</strong></em></p>
+
+    <!-- html should define the structure of your document, leaving its appearance to CSS. HTML markups should provide semantic information about your content--NOT presentational information.-->
+
+    <h2>Empty Elements</h2>
+
+    <p>Thanks for reading! Interneting should be getting easier now.</p>
+
+    <p>Regards,<br/>
+      The Authors
+    </p>
+
+    <!--the <br/> element is useful anywhere text formatting matters. it is useful to state HARD LINE BREAKS-->
+
+    <hr/>
+
+    <!-- the hr element === horizontal rule, represents thematic break. it should carry meaning, don't just use it for aesthetics...if ya want that just use CSS border properties. hr element carries LESS significance than the separation created by a new HEADING eleemnt but MORE significance than a NEW paragraph -->
+
+    <!-- the trailing SLASH in all empty HTML elements are entirely optional, like <br> and <hr> -->
+
+    <p>P.S. This page might look like crap, but we'll fix that with some CSS soon.</p>
+  </body>
+</html>
