@@ -1,0 +1,5 @@
+/* A CSS “rule” always starts with a “selector” that defines which HTML elements it applies to. In this case, we’re trying to style the <body> element. After the selector, we have the “declarations block” inside of some curly braces. Any “properties” we set in here will affect the <body> element. */
+
+body {
+  color: #FF0000;
+}
