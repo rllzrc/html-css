@@ -1,5 +1,69 @@
 /* A CSS “rule” always starts with a “selector” that defines which HTML elements it applies to. In this case, we’re trying to style the <body> element. After the selector, we have the “declarations block” inside of some curly braces. Any “properties” we set in here will affect the <body> element. */
 
 body {
-  color: #FF0000;
+  color: #414141;
+  background-color: #EEEEEE;
+  font-size: 18px;
 }
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+/* List Styles */
+
+/* lets you alter the bullet icon used for <li> elements. you'll typically want to define it on the parent <uL> or <ol> element: */
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman; 
+}
+
+/* UNDERLINES: text declaration property determines whether text is underlined or not. If set to NONE we can remove the default underline from all of our links as below:
+
+!!For adding a common value with strike thru, use HTML <ins> and <del> elements instead of adding line-through style to an ol <p> tag 
+
+*/
+
+a {
+  text-decoration: none;
+}
+
+/* ! TEXT ALIGNMENT ! */
+/* this property defines the alignment of the text in an HTML element -> you can also pass it right, center, or justify */
+
+p {
+  text-align: left;
+}
+
+/* ! FONT WEIGHT && STYLES */
+/* font weight = defines the boldness of the text in an element -> font style = property that indicates whether its italicized or not
+
+/* example:
+
+em {
+  font-weight: normal;
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+  font-style: normal;
+}
+
+*/
+
+
+
