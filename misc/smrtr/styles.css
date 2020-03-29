@@ -25,6 +25,8 @@ h1 {
   color: red;
 }
 
+/* line-height: space between the paragraphs or p tag */
+
 p.spacey {
   letter-spacing: 1em;
   word-spacing: 1em;
@@ -43,14 +45,20 @@ p.tabbed {
   text-indent: 1.5em;
 }
 
+/* blockquote is to make sure all of the sentences are in-line */
+
 blockquote {
   font-size: .9em;
   color: grey;
 }
 
+/* extra white space around the top, right, bottom, and left sides respectively */
+
 p.offset {
   margin: 2em;
 }
+
+/* padding --> to add whitespace between the border and what is inside --> top right bottom left */
 
 .enclosed {
   border: 4px solid pink;
@@ -68,4 +76,14 @@ h2 #warm {
 div #midpage {
   margin: 0 3em 0 3em;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+img.has-own-line {
+  display: block;
+}
+
+/* positioning an image --> may need to use block display for own line, by default the browser will place it all the way over to the left, if you want it further to the right increase the em number!  */
+
+img.inset {
+  margin-left: 5em;
 }
