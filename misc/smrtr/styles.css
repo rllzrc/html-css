@@ -87,3 +87,23 @@ img.has-own-line {
 img.inset {
   margin-left: 5em;
 }
+
+/* CENTERING AN IMAGE --> auto = tells the browser to split left and right margins equally */
+
+img.mid {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+/* F L O A T I N G IMAGES! --> to get the text wrap effect */
+
+img.fl {
+  float: left;
+  margin-right: .5em;
+}
+
+/* this class will make sure the following paragraphs will not wrap around image */
+
+p.clr {
+  clear: both;
+}
