@@ -153,3 +153,15 @@ ul {
 ul {
   list-style-type: square;
 }
+
+/* try not to do this as it can cause headaches later */
+
+ul.custom {
+  list-style-image: url("images/heart.png");
+}
+
+/* FOR ORDERED lists, marker style can be specified as decimal, decimal-leading-zero, lower/upper-alpha, lower/upper-roman: */
+
+ol.special {
+  list-style-type: lower-roman;
+}
