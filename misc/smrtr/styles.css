@@ -107,3 +107,25 @@ img.fl {
 p.clr {
   clear: both;
 }
+
+/* styling links! */
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: orange;
+}
+
+/* this increases link text size on click */
+
+a:active {
+  font-size: 1.25em;
+}
+
+/* to change the appearance of a link that the user has already visited */
+
+a:visited {
+  color: pink;
+}
