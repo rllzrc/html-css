@@ -129,3 +129,27 @@ a:active {
 a:visited {
   color: pink;
 }
+
+
+/* by DEFAULT browsers do not add any space between list items. you can customize it to do it with this line: */
+
+li {
+  margin: .75em;
+}
+
+/* if you want to specify the DEFAULT style of block text list-item indentation. The entire block is indented. */
+
+ul {
+  list-style-position: outside;
+}
+
+/* For a FIRST LINE only indent, see below: */
+ul {
+  list-style-position: inside;
+}
+
+/* default style is DISC, but can specify for square, circle, or even an image! try to avoid the image option since it can be quite messy esp for UX */
+
+ul {
+  list-style-type: square;
+}
