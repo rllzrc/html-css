@@ -239,3 +239,21 @@ table#t4 {
 table#t4 td {
   width: 50%
 }
+
+/* Aligining text on tables! */
+
+table#t4 td {
+  text-align: center;
+}
+
+/* to specify vertical alignment within cells, CANNOT be for the whole table only for <th> and <td> elements */
+
+th {
+  vertical-align: bottom;
+}
+
+/* background color for tables */
+
+tr.even {
+  background-color: lavender;
+}
