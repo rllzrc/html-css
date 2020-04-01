@@ -165,3 +165,77 @@ ul.custom {
 ol.special {
   list-style-type: lower-roman;
 }
+
+/* playing with more CSS selectors! to double the size of all paragraphs within this div! You can combine more selectors too! */
+
+div#midpage p {
+  font-size: 2em;
+}
+
+/* to select the first paragraph following any div:
+FIRST is selector elemet +  */
+
+div + p {
+  color: pink;
+}
+
+/* to select ONLY the first level of divs within the div that has this id 
+ONLY FIRST LEVEL = selector element and > */
+
+div#content > div {
+  color: dodgerblue;
+}
+
+/* to select the first level of list items in all unordered lists */
+ul > li {
+  color: pink;
+}
+
+/* styling Table Borders!!~ */
+
+/* for cells to have borders */
+th, td {
+  border: 1px solid black;
+}
+
+/* by default, browsers add a lil bit of space between cells, creating gaps between hairline borders. This is the code for no gaps: */
+
+table {
+  border-collapse: collapse;
+}
+
+/* example of top and bottom borders framing the table headers */
+
+th.top-row {
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+
+/* example of left and right borders framing the edges */
+
+table.standout {
+  border-left: 5px solid orange;
+  border-right: 5px solid orange;
+}
+
+/* browsers dont add space between the table cell borders and the text inside. Add padding to take care of it! (add space b/w cell text and borders) */
+
+th, td {
+  padding: .25em;
+}
+
+/* border spacing for the whole table --> space b/w CELLS */
+
+table {
+  border-spacing: 1em;
+}
+
+/* table spacing! continued... setting cell size to its contents specifically instead of letting the browser adjust it on its own */
+
+table#t4 {
+  width: 25%;
+}
+
+table#t4 td {
+  width: 50%
+}
