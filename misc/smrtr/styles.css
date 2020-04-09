@@ -257,3 +257,25 @@ th {
 tr.even {
   background-color: lavender;
 }
+
+/* styling forms! --> syntax varies depending on the type of inputs you're styling */
+
+input[type="text"], textarea {
+  font-size: 2em;
+  padding: .25em;
+}
+
+input[type="email"], textarea {
+  font-size: 2em;
+  padding: .25em;
+}
+
+/* heftyyy submit button for example: */
+input[type="submit"] {
+  font-size: 1.25em;
+}
+
+legend {
+  font-weight: 600;
+}
+

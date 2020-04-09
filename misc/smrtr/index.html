@@ -155,16 +155,27 @@
         </tr>
       </table>
       
-      <form>
-        <input type="text" name="surname" size="25" maxlength="40">
-        <textarea name="message" rows="8" cols="30"></textarea>
-        <input type="radio" name="binary" value="yes"> Yes
-        <input type="radio" name="binary" value="no"> No
-        <input type="checkbox" name="c1" value="first"> Have first name
-        <input type="checkbox" name="c1" value="last"> Have last name
-        <input type="submit" value="Send">
-        </form>
+      <fieldset>
+        <legend>First group</legend>
+          <input type="text" name="surname" size="25" maxlength="40">
+          <textarea name="message" rows="8" cols="30"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Second group</legend>
+          <label><input type="radio" name="binary" value="yes"> Yes</label>
+          <label><input type="radio" name="binary" value="no"> No</label>
+          <input type="checkbox" name="c1" id="f" value="first"> <label for="f">Have first name</label>
+          <input type="checkbox" name="c1" id="l" value="last"> <label for="l">Have last name</label>
+          <select name="current-state">
+            <option value="NY">New York</option>
+            <option value="NM">New Mexico</option>
+          </select>
+      </fieldset>
+      <input type="submit" value="Send">
       </form>
+
+      <!-- This is a comment that the browser will ignore.
+      It's just for practice ya know! -->
 
   </body>
 </html>
