@@ -279,3 +279,24 @@ legend {
   font-weight: 600;
 }
 
+/* layout with div widths and centering */
+
+div#narrow {
+  width: 20%;
+  margin: 0 auto 0 auto;
+}
+
+div#main {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+/* will be overidden by div specifications, but here is an example of body style */
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: grey;
+  color: black;
+}
