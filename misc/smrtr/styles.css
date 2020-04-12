@@ -300,3 +300,14 @@ body {
   background-color: grey;
   color: black;
 }
+
+/* to code div that prevents unintended wraps */
+
+div#endFloat {
+  clear: both;
+}
+
+div#mid {
+  width: 32%;
+  float: left;
+}
