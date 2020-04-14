@@ -288,6 +288,11 @@ div#narrow {
 
 div#main {
   width: 90%;
+  margin: 1.5em auto 1% auto;
+}
+
+div.inset {
+  width: 90%;
   margin: 0 auto 0 auto;
 }
 
