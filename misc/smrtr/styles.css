@@ -316,3 +316,16 @@ div#mid {
   width: 32%;
   float: left;
 }
+
+/* modern heading generic layout: */
+
+div#banner {
+  width: 100%;
+  font-size: 2em;
+  margin-left: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ccff33;
+  padding: 0;
+}
