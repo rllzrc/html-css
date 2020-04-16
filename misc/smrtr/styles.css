@@ -318,6 +318,7 @@ div#mid {
 }
 
 /* modern heading generic layout: */
+/* switching the position to be fixed tells the browser to keep the div immobilized as everything else on the page scrolls */
 
 div#banner {
   width: 100%;
@@ -339,4 +340,45 @@ div#banner img {
 
 div#banner h2 {
   padding-top: .15em;
+}
+
+/* invinsible spacer for modern headers/divs */
+
+div#banner img, div#spacer img {
+  float: left;
+  margin: 1em;
+}
+
+div#spacer {
+  width: 100%;
+  visibility: hidden;
+}
+
+/* since img is floated within div header, need a paragraph to clear the float */
+
+p.clearFloat {
+  clear: both;
+}
+
+/* to fix "normal flows" of divs with aboslute or fixed positions, avoid div on divs, invincible divs --> DUPLICATE the header, one that isn't fixed, part of the main flow, make it visible to browser but invincible to the user >> creates a SPACER effect ---> hidden visibility keeps the contents invincible though the browser knows its there << */
+
+div#invinsible-header {
+  width: 100%;
+  visibility: hidden;
+}
+
+div#header h2, div#invincible-header h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 2em;
+  margin-left: 2%;
+  padding: 0;
+}
+
+/* fixed position elements can interfere with the stack order using z-index; the lower this number the lower its place is in the stack order --> all elements that are in the normal HTML flow have an implicit z-index of 0 */
+
+div#header img, div#invincible-header img {
+  float: left;
+  margin: .9em .6em 0 .75em;
 }
