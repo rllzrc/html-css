@@ -329,3 +329,14 @@ div#banner {
   background-color: #ccff33;
   padding: 0;
 }
+
+/* add image, float, padding and margin in banner */
+
+div#banner img {
+  float: left;
+  margin: 1em;
+}
+
+div#banner h2 {
+  padding-top: .15em;
+}
