@@ -382,3 +382,12 @@ div#header img, div#invincible-header img {
   float: left;
   margin: .9em .6em 0 .75em;
 }
+
+/* navigation bar styling!!! */
+div#navbar {
+  clear: both;
+}
+
+div#navbar ul {
+  list-style-type: none;
+}
