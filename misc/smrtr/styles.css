@@ -400,4 +400,111 @@ div#navbar ul li a {
   font-weight: 900;
   text-decoration: none;
   color: dodgerblue;
+  display: block;
+  padding: .3em;
+}
+
+/* a modern simple-ish navigation bar styling */
+
+div#navbar {
+  display: inline-block;
+}
+div#navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+div#navbar ul li {
+  background-color: blue;
+  margin-bottom: .25em;
+}
+div#navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .3em;
+}
+
+/* end modern simple-ish nav bar styling */
+
+/************************/
+
+/* styling a HORIZONTAL nav bar below 
+To convert a navbar from vertical to horizontal, you replace the following code with a width specification. */
+
+div#navbar {
+  width: 100%;
+}
+
+div#navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div#navbar ul li {
+  background-color: blue; 
+  text-align: center;
+  display: inline;  /* tells browser to list items side by side instead of veritcal default */
+  width: 19%;
+  float: left;
+  margin-right: .5em;
+}
+
+div#navbar ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: .3em;
+}
+
+/* alternative option:
+
+div#navbar {
+  width: 100%;
+}
+
+div#navbar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+div#navbar ul li {
+  background-color: #cc6600;
+  margin-bottom: .2em;
+  display: inline;
+  float: left;
+  width: 32%;
+  text-align: center;
+  margin-right: .25em;
+}
+
+div#navbar ul li a {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  padding: .75em .75em .75em .75em;    
+}
+
+*/
+
+/* end styling for HORIZONTAL nav bar */
+
+/** for styling nav bar items on hover and on click */
+
+li.changeBackground {
+  background-color: blue;
+}
+
+li.changeBackground:hover {
+  background-color: lightBlue;
+}
+
+li.changeBackground:active {
+  background-color: darkBlue;
 }
