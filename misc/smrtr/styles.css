@@ -508,3 +508,18 @@ li.changeBackground:hover {
 li.changeBackground:active {
   background-color: darkBlue;
 }
+
+/* for styling background images: 
+
+body {
+  background-image: url("http://www.asmarterwaytolearn.com/monarch.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+
+background-attachment: scroll or fixed
+
+*/
+
+
