@@ -522,10 +522,22 @@ background-attachment: scroll or fixed
 
 */
 
-/* practice with ems vs percentages vs pixels */
+/* practice with ems vs percentages vs pixels
+general rule:
+
+ems --> use for typography, margins, and padding
+percentages --> divs, tables, iframes, and sometimes margins/padding
+pixels --> absolute and not relative like ems; images, borders, windows, iframes, and fixed/absolute and relative positioning
+*/ 
+
+/* When you want to specify the exact position of an element in the window and allow it to scroll, you use ABSOLUTE positioning. */
+
+/* When you want to nudge an element away from its normal position, you use RELATIVE positioning. */
 
 div.narrow {
   width: 50%;
+  position: relative;
+  left: 20%;
 }
 
 p.narrower {
@@ -533,3 +545,28 @@ p.narrower {
   text-align: center;
 }
 
+/* practice with Z-INDEX */
+
+div#bottom {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* for responsive web design, use media queries */
+
+@media only screen and (min-device-width: 800px) {
+  p.test {
+    font-family: "Arial", cursive, sans-serif;
+  }
+}
+
+/* playing around with min and max width/height */
+
+p.weird {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: scroll;
+}
