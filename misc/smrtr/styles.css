@@ -522,4 +522,14 @@ background-attachment: scroll or fixed
 
 */
 
+/* practice with ems vs percentages vs pixels */
+
+div.narrow {
+  width: 50%;
+}
+
+p.narrower {
+  width: 50%;
+  text-align: center;
+}
 
