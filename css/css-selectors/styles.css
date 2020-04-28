@@ -1,0 +1,83 @@
+/* CSS SELECTORS PRACTICE! */
+
+p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+}
+
+.button:link,                 
+.button:visited {             
+  display: block;            
+  text-decoration: none;      
+
+  color: #FFF;                
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;
+}
+
+/* resuable class styles && modifying specifics of a particular element */
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;
+}
+
+.call-to-action:hover,
+.call-to-action:visited:active {
+  background-color: #EEB75A;
+}
+
+/* psedo-classes in link styles */
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+
+/* creates a dedicated hover style for visited links */
+a:visited:hover {
+  color: orange;
+}
+
+/* lets you style visited links separately from unvisted ones */
+a:visited:active {
+  color: red;
+}
+
+/* If you wanted to avoid the sidebar paragraphs and select only the first <p> in our <div class='page'>, you would need to limit its scope using a child selector, like so */
+
+.page > p:first-of-type {
+  color: #7E8184;
+  font-style: italic;
+}
+
+/* sample ID styling --> remember only ONE element per page (not reusable) 
