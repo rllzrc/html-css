@@ -9,20 +9,12 @@
   box-sizing: border-box;
 }
 
-/* to give our page a fixed-width layout instead of being as wide as the broswer window */
-.page {
-  width: 900px;
-  margin: 0 auto;
-  border: 1px solid red;
-  overflow: hidden;
-  background-color: #EAEDF0;
-}
-
 .menu {
   height: 100px;
   background-color: #B2D6FF;
 }
 
+/* left-aligned this and content blocks. this kind of nesting and aligning is typical for most web layouts */
 .sidebar {
   float: left;
   width: 200px;
@@ -41,6 +33,19 @@
   clear: both;
   height: 200px;
   background-color: #D6E9FE;
+}
+
+/* to give our page a fixed-width layout instead of being as wide as the broswer window >> fixed width here for centering everything */
+.page {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+/* 3 nested divs elements just for laying out the page magazine style: this will be a wrapper for full-bleed background color */
+.container {
+  overflow: hidden;
+  background-color: #EAEDF0;
 }
 
 
