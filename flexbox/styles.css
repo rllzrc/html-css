@@ -1,7 +1,7 @@
 /* flexbox practice ~ */
 
 * {
-  marign: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -10,6 +10,12 @@
   color: #fff;
   background-color: #5995DA;
   padding: 20px 0;
+
+  /* ~by giving it the value of flex, we are telling the browser that everything in the box should be rendered w flexbox instead of the default box model */
+  display: flex;
+  
+  /* center the menu to define the horizontal alignment of its items */
+  justify-content: center;
 }
 
 .menu {
